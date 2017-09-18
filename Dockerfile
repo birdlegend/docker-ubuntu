@@ -11,8 +11,6 @@ ADD sources.list /etc/apt/sources.list
 # Install.
 RUN apt-get update
 RUN apt-get -y upgrade
-RUN apt-get install -y build-essential
-RUN apt-get install -y software-properties-common
 RUN apt-get install -y curl unzip vim wget
 
 # Set environment variables.
