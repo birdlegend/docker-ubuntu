@@ -1,6 +1,6 @@
 # Dockerizing ubuntu14.04: Dockerfile for building ubuntu images
 #
-FROM       daocloud.io/library/ubuntu:14.04
+FROM       daocloud.io/library/ubuntu:latest
 MAINTAINER shaobin <1109179198@qq.com>
 
 ENV TZ "Asia/Guangzhou"
