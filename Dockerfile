@@ -9,6 +9,8 @@ ENV TERM xterm
 ADD sources.list /etc/apt/sources.list
 
 # Install.
+# clear sources cache
+RUN rm -fR /var/lib/apt/lists/*
 RUN apt-get update
 RUN apt-get -y upgrade
 RUN apt-get install -y curl unzip vim wget
